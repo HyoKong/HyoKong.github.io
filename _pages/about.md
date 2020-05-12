@@ -14,7 +14,7 @@ I am Hanyang Kong, a master student at Xi'an Jiaotong University.
 
 ***Research Interests*** : 
 
-Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition.
+Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition, Face Manipulation, Image Translation.
 
 ***News*** : 
 
@@ -24,9 +24,20 @@ Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Fac
 
 * 1
 
+***Selected Awards*** : 
+* Outstanding Graduate student (<0.5%), Xi'an Jiaotong University, 2020.
+* Excellent Graduate Student (<1%), Xi'an Jiaotong University, 2019.
+* 1st-Class Scholarship (<10%), Xi'an Jiaotong University, 2019.
+* National 2nd Award, 15th China Post-Graduate Mathematical Contest in Modelling, 2018.
+* 1st-Class Scholarship (<10%), Xi'an Jiaotong University, 2018.
+* Excellent Graduate Student (<1%), Xi'an Jiaotong University, 2018.
+* Outstanding Graduate Student (<0.5%), Anhui Province, 2017.
+* Outstanding Graduate Student (<2%), Hefei University of Technology, 2017
+
 ***Hobbies*** : 
 
-Street Workout; Rowing; Breaking Dance; Swimming; Erhu (A traditional Chinese instrument)
+<!-- Street Workout; Rowing; Breaking Dance; Swimming; Erhu (A traditional Chinese instrument) -->
+Erhu Instrument (Grade 10), Rowing (1st Prize in School Sports Meeting), Swimming (4th Prize in School Swimming Competition), Break Dance (6th in Anhui Division of National Street Dance Championship), Street Workout, MMA, Muay Thai, CrossFit.
 
 <!-- A data-driven personal website
 ======
