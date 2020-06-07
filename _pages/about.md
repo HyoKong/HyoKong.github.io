@@ -19,7 +19,9 @@ Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Fac
 ***Working Experience*** : 
 
 * **Jun. 2020 - Present:** 
+  
   Research Intern
+
   Qihoo 360 Technology Co. Ltd., Beijing, China
 
 ***News*** : 
