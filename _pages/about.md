@@ -16,9 +16,15 @@ I am Hanyang Kong, a master student at Xi'an Jiaotong University.
 
 Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition, Face Manipulation, Image Translation.
 
+***Working Experience*** : 
+
+* **Jun. 2020 - Present:** 
+  Research Intern
+  Qihoo 360 Technology Co. Ltd., Beijing, China
+
 ***News*** : 
 
-* *Jun. 2020* : 
+* **Jun. 2020** : 
 
 ***Professional Activities*** : 
 
