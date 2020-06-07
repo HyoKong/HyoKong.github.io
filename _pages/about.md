@@ -12,27 +12,27 @@ I am Hanyang Kong, a master student at Xi'an Jiaotong University.
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-***Research Interests*** : 
-
+Research Interests
+======
 Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition, Face Manipulation, Image Translation.
 
-***Working Experience*** : 
+Working Experience
+======
+* *Jun. 2020 - Present*: Research Intern
+  * Qihoo 360 Technology Co. Ltd., Beijing, China
+  * Duties included: Face & Pose
+  * Supervisor: Dr. Luoqi Liu
 
-* **Jun. 2020 - Present:** 
-  
-  Research Intern
-
-  Qihoo 360 Technology Co. Ltd., Beijing, China
-
-***News*** : 
-
+News
+======
 * **Jun. 2020** : 
 
-***Professional Activities*** : 
-
+Professional Activities
+======
 * 1
 
-***Selected Awards*** : 
+Selected Awards
+======
 * Outstanding Graduate student (<0.5%), Xi'an Jiaotong University, 2020.
 * Excellent Graduate Student (<1%), Xi'an Jiaotong University, 2019.
 * 1st-Class Scholarship (<10%), Xi'an Jiaotong University, 2019.
@@ -42,10 +42,18 @@ Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Fac
 * Outstanding Graduate Student (<0.5%), Anhui Province, 2017.
 * Outstanding Graduate Student (<2%), Hefei University of Technology, 2017
 
-***Hobbies*** : 
-
+Hobbies
+======
 <!-- Street Workout; Rowing; Breaking Dance; Swimming; Erhu (A traditional Chinese instrument) -->
-Erhu Instrument (Grade 10), Rowing (1st Prize in School Sports Meeting), Swimming (4th Prize in School Swimming Competition), Break Dance (6th in Anhui Division of National Street Dance Championship), Street Workout, MMA, Muay Thai, CrossFit.
+<!-- Erhu Instrument (Grade 10), Rowing (1st Prize in School Sports Meeting), Swimming (4th Prize in School Swimming Competition), Break Dance (6th in Anhui Division of National Street Dance Championship), Street Workout, MMA, Muay Thai, CrossFit. -->
+* Erhu Instrument (Grade 10)
+* Rowing (1st Prize in School Sports Meeting)
+* Swimming (4th Prize in School Swimming Competition)
+* Break Dance (6th in Anhui Division of National Street Dance Championship)
+* Street Workout
+* MMA
+* Muay Thai
+* CrossFit
 
 <!-- A data-driven personal website
 ======
