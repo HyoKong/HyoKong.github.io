@@ -21,7 +21,7 @@ Working Experience
 * *Jun. 2020 - Present*: Research Intern
   * Qihoo 360 Technology Co. Ltd., Beijing, China
   * Duties included: Face & Pose
-  * Supervisor: Dr. Luoqi Liu
+  * Supervisor: Dr. Luoqi Liu, [Dr. Yunchao Wei](https://weiyc.github.io/), and Dr. Shengtao Xiao.
 
 News
 ======
