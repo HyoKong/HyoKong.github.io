@@ -18,18 +18,22 @@ Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Fac
 
 Working Experience
 ======
-* *Jun. 2020 - Present*: Research Intern
+* ***Jun. 2020 - Nov. 2020*** : Research Intern
   * Qihoo 360 Technology Co. Ltd., Beijing, China
   * Duties included: Face & Pose
   * Supervisor: Dr. Luoqi Liu, [Dr. Yunchao Wei](https://weiyc.github.io/), and Dr. Shengtao Xiao.
+* ***Nov. 2020 - Present*** : AI Research Scientist
+  * Pensees PTE LTD, Singapore.
+  * Duties included: Face Recognition, Pose Estimation.
+  * Supervisor: Ms. Jane Shen.
 
 News
 ======
-* **Jun. 2020** : 
+* ***Nov. 2020*** : Reproduce and release [the code and trained models](https://github.com/HyoKong/DVG) of paper [Dual Variational Generation for Low Shot Heterogeneous Face Recognition](https://arxiv.org/pdf/1903.10203.pdf). Please refer to [here](https://github.com/BradyFU/DVG) for the original implementation. Thanks for the author [Chaoyou Fu](https://bradyfu.github.io/) for helpful discussion.
 
 Professional Activities
 ======
-* 1
+* Invited reviewer of T-CSVT, NeurIPS.
 
 Selected Awards
 ======
@@ -52,7 +56,7 @@ Hobbies
 * Break Dance (6th in Anhui Division of National Street Dance Championship)
 * Street Workout
 * MMA
-* Muay Thai
+* Muay Thai (Falling in love with it)
 * CrossFit
 
 <!-- A data-driven personal website
