@@ -18,11 +18,11 @@ Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Fac
 
 Working Experience
 ======
-* ***Jun. 2020 - Nov. 2020*** : Research Intern
-  * Qihoo 360 Technology Co. Ltd., Beijing, China
-  * Duties included: Face & Pose
+* ***Jun. 2020 - Nov. 2020*** : Research Intern.
+  * Qihoo 360 Technology Co. Ltd., Beijing, China.
+  * Duties included: Face & Pose.
   * Supervisor: Dr. Luoqi Liu, [Dr. Yunchao Wei](https://weiyc.github.io/), and Dr. Shengtao Xiao.
-* ***Nov. 2020 - Present*** : AI Research Scientist
+* ***Nov. 2020 - Present*** : AI Research Scientist.
   * Pensees PTE LTD, Singapore.
   * Duties included: Face Recognition, Pose Estimation.
   * Supervisor: Ms. Jane Shen.
@@ -33,7 +33,7 @@ News
 
 Professional Activities
 ======
-* Invited reviewer of T-CSVT, NeurIPS.
+* Invited reviewer of T-CSVT, Neurocomputing, NeurIPS.
 
 Selected Awards
 ======
