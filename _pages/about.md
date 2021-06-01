@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Hanyang Kong, a master student at Xi'an Jiaotong University. I am working closely with [Dr. Jian Zhao](https://zhaoj9014.github.io/).
+I am Hanyang Kong, a Ph.D student at National University of Singapore under the supervision of Prof. [Jiashi Feng](https://sites.google.com/site/jshfeng/). I am working closely with [Dr. Jian Zhao](https://zhaoj9014.github.io/).
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
@@ -26,6 +26,10 @@ Working Experience
   * Pensees PTE LTD, Singapore.
   * Duties included: Face Recognition, Pose Estimation.
   * Supervisor: Ms. Jane Shen.
+* * ***Aug. 2021 - Present*** : NUS Ph.D Student.
+  * Department of Electrical and Computer Engineering, National University of Singapore.
+  * Research Interest: Self Attention, Human Modeling.
+  * Supervisor: Prof. Feng Jiashi.
 
 News
 ======
