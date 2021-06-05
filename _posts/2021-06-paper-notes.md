@@ -17,8 +17,18 @@ tags:
 
 <img src="http://yaksoy.github.io/images/hrdepthTeaser.jpg" width = 50% height = 50% div align=center />
 
-### Poster:
+### Poster
 <img src='http://yaksoy.github.io/highresdepth/CVPR21PosterSm.jpg' width = 50% div align=mid>
+
+### Intro
+
+Issues:
+- Trade-off between **a consistent scene structure** and **the high-frequency details**.
+- The networks starts to produce **structurally inconsistent** when the **contextural cues** in the image are **further apart** than the **receptive field size**.
+
+Methods:
+- Using an edge map as the proxy for contextual cues to derermine this maximun resolution by making sure that no pixel is further apart from contextual cues than half of the receptive field size.
+
 
 # 3D Hands and Pose
 
