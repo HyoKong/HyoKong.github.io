@@ -1,6 +1,6 @@
 ---
 title: 'paper-notes'
-date: 2016-06-01
+date: 2021-06-01
 permalink: /posts/2021/06/paper-notes/
 tags:
   - paper notes

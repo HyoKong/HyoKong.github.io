@@ -51,14 +51,7 @@ NeRF可以简要概括为用一个MLP神经网络去隐式的学习一个静态3
 
 $$ \Vert\vec{x}\Vert_1=\sum_{i=1}^N\vert{x_i}\vert $$
 
-Headings are cool
-======
 
-You can have many headings
-====
-
-Aren't headings cool?
-------
 
 Reference:
 - [【NeRF论文笔记】用于视图合成的神经辐射场技术](https://zhuanlan.zhihu.com/p/360365941)
