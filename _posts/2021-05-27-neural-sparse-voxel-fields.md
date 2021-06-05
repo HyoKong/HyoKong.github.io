@@ -1,6 +1,6 @@
 ---
 title: 'Neural Sparse Voxel Fields'
-date: 2014-08-14
+date: 2021-05-27
 permalink: /posts/2021/05/neural-sparse-voxel-fields/
 tags:
   - voxel fields
