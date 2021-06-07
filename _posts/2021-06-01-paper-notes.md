@@ -1,5 +1,5 @@
 ---
-title: 'paper-notes'
+title: 'Paper Notes on Jun. 2021'
 date: 2021-06-01
 permalink: /posts/2021/06/paper-notes/
 tags:
@@ -14,10 +14,10 @@ tags:
 - Citation 0
 - Simon Fraser University, Adobe Research
 
-<img src="http://yaksoy.github.io/images/hrdepthTeaser.jpg" width = 50% height = 50% div align=center />
+<div align=center><img src="http://yaksoy.github.io/images/hrdepthTeaser.jpg" width = 50% height = 50% /></div>
 
 ### Poster
-<img src='http://yaksoy.github.io/highresdepth/CVPR21PosterSm.jpg' width = 50% div align=mid>
+<div align=center><img src='http://yaksoy.github.io/highresdepth/CVPR21PosterSm.jpg' width = 50%/></div>
 
 ### Intro
 
