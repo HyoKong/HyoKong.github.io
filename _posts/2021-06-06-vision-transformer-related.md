@@ -7,6 +7,8 @@ tags:
   - transformer
 ---
 
+Transformer的近期进展有哪些?
+
 # Intriguing Properties of Vision Transformer
 
 Vision transformer 有哪些有趣的特性？
@@ -81,48 +83,46 @@ Geirhos等人引入了Shape v.s. Texture的假设, 并提出了一种训练框�
 
 为了解决这种问题, 作者另外将shape token引入ViTs结构中, 专门学习shape信息. 具体来说, 作者使用一组不同的tokens在同一ViTs网络结构中分别对Shape和Texture进行建模. 为此, 作者从预训练的强shape-bias的CNN模型中蒸馏shape相关信息, 这种蒸馏方法既保证了合理的分类精度, 也提供了比原始ViTs模型更好的shape偏差.
 
-#### ***<font color=red>shape bias相关介绍</font>***
-
-<div align=center><img src="https://pic1.zhimg.com/v2-1fe3ad62eb7d4c07f230dd3a302663a4_1440w.jpg?source=172ae18b" width=80%></div>
-
-已有研究者表明, ImageNet上预训练的CNN对形状是有偏见的.
-
-举个例子, 如果图片是猫, CNN都会分类正确, 但如果是一只有着大象外皮纹路的猫, CNNs大概率上会识别成大象而不是猫. 目前普遍认为, 人类主要是通过形状来判断物体的, 而CNN更倾向于使用颜色和纹理进行预测, 而非形状.
-
-为了验证上述观点, 严格遵循心理学实验流程设定, 进行了五项实验.
-
-前四项实验中, 作者将16类共160张图白色背景的自然图像做四种不同的变换, 分别交个人类实验者和在ImageNet上预训练的CNNs进行物体识别, 这四种变换包括: 
-
-- 转灰度图: 使用skimage.color.rgb2gray实现;
-- 转黑白(轮廓/剪影): 二值化方法+人工检查;
-- 边缘提取: 使用matlab实现canny edge extractor;
-- 纹理图: 使用每类三张共48张纹理图像, 如动物的毛发或者密集排列的某种物体.
-
-所有的原图和纹理图都可以被人类和CNNs正确的识别; 灰度图像也维持了较高的准确率. 但是到剪影和边缘图像的时候, 人类的识别精度就显现出了明显的优势. 这说明人类可以更好的应对纹理较少或无纹理的图片; 而对于CNNs来说, 这种图像域的偏移(图像空间和训练空间不一样)带来了不小的麻烦.
-
-在第五个实验中, 研究员又使用了形状纹理不一致性(cue conflict). 他们使用迭代式风格迁移的方法, 将纹理图的风格迁移到一些自然图像上, 构造了共16类1280张这种纹理形状不一致的图像, 让人类和CNNs进行识别, 并观察其在形状和纹理之间的偏好. 值得注意的是, 第五个实验不是判断分类正确与否的问题, 只是判断偏好的问题. 下图显示了一些形状纹理不一致的图像: 
-
-<div align=center><img src="https://pic1.zhimg.com/80/v2-326d5456c77cf5e3340a9f394a311ab4_720w.jpg" width=70%></div>
-
-结果可有如下图表表示. 红色圆圈表示了不同类别下人类对于纹理和形状的偏好情况, 不同的蓝色标志表示了不同的CNN结构的偏好情况, 越往左说明对形状的偏好性更强, 反之则对纹理的偏好性较强. 虽然各类图片的情况不甚相同, 但也很好的佐证了上述四个实验的结论.
-
-<div align=center><img src="https://pic1.zhimg.com/80/v2-b3a9711838f6ee6bdb0d495a1376d4f8_720w.jpg" width=70%></div>
-
-对于CNNs的常见解释是, 它通过不断的卷积和池化, 从提取最简单的边角特征, 到不断融合这些浅层特征, 从而获得更为复杂的表示. 现在看来, 形状并不是CNNs的主要判断依据, 颜色和纹理才是. 这就是所谓的对纹理和颜色的偏好.
-
-实验证明, 提高CNNs对形状的偏好可以使得提取的特征更加鲁棒, 可以提升分类等任务的准确度. 下面简单介绍三种方法.
-
-- **风格迁移训练**
-  - Geirhos等人对ImageNet数据集使用AnaIN方法进行随机风格迁移, 构成新的Stylized-ImageNet数据集, 原数据集和新数据集分别记为IN和SIN. 数据集样例如下: 
-    <div align=center><img src="https://pic3.zhimg.com/80/v2-c4e363bd0100384e89fe6a963b6061c2_720w.jpg" width=70%></div>
-  - 通过在IN和SIN上的混合训练以及微调过程, 得到Shape-ResNet模型对于形变失真图像的鲁棒性增强, 在ImageNet数据及上的分类准确性和Pascal VOC上目标检测的准确性都有所提升.
-
-- **域对抗训练**
-  - Brochu等人验证了Geirhos等人工作的有效性, 并进一步使用域对抗训练的方法解决这一问题.
-  - 该方法通过域分类器(domain classifier)和梯度反向层(gradient reversal layer)实现对于不同域一致性特征的学习.
-<div align=center><img src="https://pic1.zhimg.com/80/v2-620dbf74d9a51c3814d4174e52e22cf4_720w.jpg" width=70%></div>
-
-- **基于拼图的自监督学习**
+> ***<font color=red>shape bias相关介绍</font>***
+> <div align=center><img src="https://pic1.zhimg.com/v2-1fe3ad62eb7d4c07f230dd3a302663a4_1440w.jpg?source=172ae18b" width=80%></div>
+> 已有研究者表明, ImageNet上预训练的CNN对形状是有偏见的.
+> 
+> 举个例子, 如果图片是猫, CNN都会分类正确, 但如果是一只有着大象外皮纹路的猫, CNNs大概率上会识别成大象而不是猫. 目前普遍认为, 人类主要是通过形状来判断物体的, 而CNN更倾向于使用颜色和纹理进行预测, 而非形状.
+> 
+> 为了验证上述观点, 严格遵循心理学实验流程设定, 进行了五项实验:
+> 
+> 前四项实验中, 作者将16类共160张图白色背景的自然图像做四种不同的变换, 分别交个人类实验者和在ImageNet上预训练的CNNs进行物体识别, 这四种变换包括:
+> 
+> - 转灰度图: 使用skimage.color.rgb2gray实现;
+> - 转黑白(轮廓/剪影): 二值化方法+人工检查;
+> - 边缘提取: 使用matlab实现canny edge extractor;
+> - 纹理图: 使用每类三张共48张纹理图像, 如动物的毛发或者密集排列的某种物体.
+> 
+> 所有的原图和纹理图都可以被人类和CNNs正确的识别; 灰度图像也维持了较高的准确率. 但是到剪影和边缘图像的时候, 人类的识别精度就显现出了明显的优势. 这说明人类可以更好的应对纹理较少或无纹理的图片; 而对于CNNs来说, 这种图像域的偏移(图像空间和训练空间不一样)带来了不小的麻烦.
+> 
+> 在第五个实验中, 研究员又使用了形状纹理不一致性(cue conflict). 他们使用迭代式风格迁移的方法, 将纹理图的风格迁移到一些自然图像上, 构造了共16类1280张这种纹理形状不一致的图像, 让人类和CNNs进行识别, 并观察其在形状和纹理之间的偏好. 值得注意的是, 第五个实验不是判断分类正确与否的问题, 只是判断偏好的问题. 下图显示了一些形状纹理不一致的图像: 
+> 
+> <div align=center><img src="https://pic1.zhimg.com/80/v2-326d5456c77cf5e3340a9f394a311ab4_720w.jpg" width=70%></div>
+> 
+> 结果可有如下图表表示. 红色圆圈表示了不同类别下人类对于纹理和形状的偏好情况, 不同的蓝色标志表示了不同的CNN结构的偏好情况, 越往左说明对形状的偏好性更强, 反之则对纹理的偏好性较强. 虽然各类图片的情况不甚相同, 但也很好的佐证了上述四个实验的结论.
+> 
+> <div align=center><img src="https://pic1.zhimg.com/80/v2-b3a9711838f6ee6bdb0d495a1376d4f8_720w.jpg" width=70%></div>
+> 
+> 对于CNNs的常见解释是, 它通过不断的卷积和池化, 从提取最简单的边角特征, 到不断融合这些浅层特征, 从而获得更为复杂的表示. 现在看来, 形状并不是CNNs的主要判断依据, 颜色和纹理才是. 这就是所谓的对纹理和颜色的偏好.
+> 
+> 实验证明, 提高CNNs对形状的偏好可以使得提取的特征更加鲁棒, 可以提升分类等任务的准确度. 下面简单介绍三种方法.
+> 
+> - **风格迁移训练**
+>   - Geirhos等人对ImageNet数据集使用AnaIN方法进行随机风格迁移, 构成新的Stylized-ImageNet数据集, 原数据集和新数据集分别记为IN和SIN. 数据集样例如下: 
+>     <div align=center><img src="https://pic3.zhimg.com/80/v2-c4e363bd0100384e89fe6a963b6061c2_720w.jpg" width=70%></div>
+>   - 通过在IN和SIN上的混合训练以及微调过程, 得到Shape-ResNet模型对于形变失真图像的鲁棒性增强, 在ImageNet数据及上的分类准确性和Pascal VOC上目标检测的准确性都有所提升.
+> 
+> - **域对抗训练**
+>   - Brochu等人验证了Geirhos等人工作的有效性, 并进一步使用域对抗训练的方法解决这一问题.
+>   - 该方法通过域分类器(domain classifier)和梯度反向层(gradient reversal layer)实现对于不同域一致性特征的学习.
+> <div align=center><img src="https://pic1.zhimg.com/80/v2-620dbf74d9a51c3814d4174e52e22cf4_720w.jpg" width=70%></div>
+> 
+> - **基于拼图的自监督学习**
 
 Reference:
 - [谷歌研究员：Transformer那些有趣的特性](https://mp.weixin.qq.com/s?src=11&timestamp=1622772800&ver=3109&signature=xxtu8aeppESTqpe1jCLbPKBtNoKIBW0gV0PZw7eT2RyoFjzbur0OJBg8UmKrOtWRgW3Ab7rG7UnGgK4WXsjI7AeJAp0lYfyuqpLZbeptuym80J-KKqveQnkPYveVuqcX&new=1)
