@@ -1,3 +1,6 @@
 [submodule "_projects/_projects/dreamdrone-page"]
 	path = _projects/_projects/dreamdrone-page
 	url = https://github.com/HyoKong/dreamdrone-page.git
+[submodule "_projects/dreamdrone-page"]
+	path = _projects/dreamdrone-page
+	url = https://github.com/HyoKong/dreamdrone-page.git
