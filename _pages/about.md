@@ -8,32 +8,28 @@ redirect_from:
   - /about.html
 ---
 
-I am Hanyang Kong, a Ph.D student at National University of Singapore under the supervision of Prof. [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) and Prof. [Jiashi Feng](https://sites.google.com/site/jshfeng/). I am working closely with [Dr. Jian Zhao](https://zhaoj9014.github.io/).
+I am Hanyang Kong, a Ph.D student at National University of Singapore under the supervision of Prof. [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/).
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
 Research Interests
 ======
-Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition; Face Manipulation; Image Translation; Pose Estimation.
+Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition; Face Manipulation; Image Translation; Pose Estimation; AIGC; LLM.
 
-Working Experience
-======
-* ***Jun. 2020 - Nov. 2020*** : Research Intern.
-  * Qihoo 360 Technology Co. Ltd., Beijing, China.
-  * Duties included: Face & Pose.
-  * Supervisor: Dr. Luoqi Liu, [Dr. Yunchao Wei](https://weiyc.github.io/), and Dr. Shengtao Xiao.
-* ***Nov. 2020 - Present*** : AI Research Scientist.
-  * Pensees PTE LTD, Singapore.
-  * Duties included: Face Recognition, Pose Estimation.
-  * Supervisor: Ms. Jane Shen.
+<!-- Working Experience
+
+
 * * ***Aug. 2021 - Present*** : NUS Ph.D Student.
   * Department of Electrical and Computer Engineering, National University of Singapore.
   * Research Interest: Self Attention, Human Modeling.
-  * Supervisor: Prof. Feng Jiashi.
+  * Supervisor: Prof. [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). -->
 
 News
 ======
-* ***Nov. 2020*** : Reproduce and release [the code and trained models](https://github.com/HyoKong/DVG) of paper [Dual Variational Generation for Low Shot Heterogeneous Face Recognition](https://arxiv.org/pdf/1903.10203.pdf). Please refer to [here](https://github.com/BradyFU/DVG) for the original implementation. Thanks for the author [Chaoyou Fu](https://bradyfu.github.io/) for helpful discussion.
+* *Dec. 2023*: We release our new project [***DreamDrone***](https://hyokong.github.io/dreamdrone-page/). Code and online demo are also released. Please feel free to reach out!
+
+* *Jul. 2023*: Our paper, Priority-Centric Human Motion Generation in Discrete Latent Space, is accepted by ICCV 2023.
+
 
 Professional Activities
 ======
