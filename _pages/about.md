@@ -31,8 +31,8 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 
 
 # 🔥 News
-- *2023.12*: &nbsp;🎉🎉 🌟Our new work, DreamDrone, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
-- *2023.07*: &nbsp;🎉🎉 Our paper 'Priority-centric human motion generation in discrete latent space' accepted by ICCV’23. 
+- *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
+- *2023.07*: &nbsp;🎉🎉 Our paper *Priority-centric human motion generation in discrete latent space* was accepted by ICCV’23. 
 
 # 📝 Publications 
 
