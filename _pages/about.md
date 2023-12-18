@@ -19,7 +19,7 @@ redirect_from:
 
 Hi there! 
 
-Welcome to the website of Hanyang Kong (孔晗旸). 🌐 
+Welcome to the website of Hanyang Kong (孔晗旸). 🌐  
 
 I am honored to be pursuing my Ph.D. at the [Learning and Vision Lab @ NUS](http://www.lv-nus.org/), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science previously led me to Xi'an Jiaotong University, where I completed my master's degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
 
