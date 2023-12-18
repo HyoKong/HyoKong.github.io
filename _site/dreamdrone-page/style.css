@@ -1,0 +1,344 @@
+/* CSS Document */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+@font-face{
+	font-family:Chalkduster;
+	font-style:normal;
+	font-weight:400;
+	src: url(./fonts/Chalkduster.woff) format('woff')
+}
+
+
+body {
+	font-family: Google Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	background-color: #fff;
+	line-height: 1.5em;
+}
+
+p a, table.affiliations a, table.menu a {
+	border-bottom: solid 1px #ddd;
+	color: inherit;
+	text-decoration: none;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+table.menu {
+	font-size: 13pt;
+	font-weight: 500;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+p.author {
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 3em 0 3em;
+}
+
+.author {
+	margin: 0pt 10pt;
+}
+
+sup {
+    font-size: 0.7em;
+    position: relative;
+    top: 0em;
+    vertical-align: super;
+    font-size: smaller;
+}
+
+
+.container {
+	width: 1000px;
+	min-height: 1200px;
+	max-height: 999999px; /* prevents font boosting */
+	margin: 0 auto; /* top and bottom, right and left */
+	/*	border: 1px solid #000; */
+	text-align: left; /* top, right, bottom, left */
+	color: #000;
+	background: #fff;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	margin-top: 0px;	
+}
+
+.venue {
+	font-size: 120%;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.header {
+	margin-top: 30px; /* h1 default14 40 */
+	margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center;
+}
+
+.logo {
+    height: 70px; /* Adjust the height as needed */
+    width: auto; /* This ensures the aspect ratio is maintained */
+    margin-right: 15px; /* Spacing between logo and title */
+}
+
+.title {
+	font-family: Google Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 300%;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	margin-top: 0px; /* h1 default14 40 */
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	line-height: 1.5em;
+	/* vertical-align: middle; */
+}
+
+table.affiliations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 80%;
+    max-width: 1080px;
+}
+
+table.affiliations td {
+    padding-top: .5em;
+    /*width: 10%;*/
+    font-size: 11pt;
+}
+
+table#video {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.caption {
+	font-style: italic;
+	font-size: 100%;
+}
+
+.label {
+	line-height: 1.2;
+	text-align: center;
+}
+
+.highlight {
+	color: blue;
+}
+
+.section{
+	font-size: 140%;
+	font-weight: 500;
+}
+
+.bibtex {
+	font-family: Google Sans, Courier, monospace;
+	white-space: pre;
+}
+
+.date {
+	font-size: 80%;
+}
+
+table.data td {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	vertical-align: top;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+/*move 150 pixels right*/
+.carousel-control-prev {
+ margin-left: 80px;
+ height: 380px;
+ }
+ .carousel-control-next {
+ margin-right: 80px;
+ height: 380px;
+ }
+ .carousel-item {
+	 height: 520px;
+	 overflow: visible;
+	 /* width: 100%; */
+	 text-align: center;
+ }
+ .img-fluid{
+     height: 400px;
+    width: 400px;
+    /* height: 80%;*/
+    /*    width: 80%;*/
+ }
+ .carousel-item img {
+ /* width: 100%; */
+ }
+ .carousel-inner .item img {
+ margin:auto;
+ }
+ .carousel-control-next,.carousel-control-prev{
+ opacity:1
+ }
+ .carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+ opacity:1
+ }
+ .slider-navigation-next,.slider-navigation-previous{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ position:absolute;
+ width:42px;
+ height:42px;
+ background:gray center center no-repeat;
+ background-size:20px 20px;
+ border:1px solid #fff;
+ border-radius:25091983px;
+ box-shadow:0 2px 5px #3232321a;
+ top:50%;
+ margin-top:-20px;
+ left:0;
+ cursor:pointer;
+ transition:transform .3s,opacity .3s,-webkit-transform .3s
+ }
+ .slider-navigation-next svg,.slider-navigation-previous svg{
+ width:25%;
+ background:gray
+ }
+ .slider-navigation-next{
+ left:auto;
+ right:0;
+ background:gray center center no-repeat;
+ background-size:20px 20px
+ }
+
+ .teaser-carousel {
+    width: 670px;
+    margin: auto;
+    height: 400px;
+ }
+
+ .caption {
+    font-family: Chalkduster;
+    color: gray;
+	width: auto;
+	display: inline-block;
+	padding: 11px 15px 11px 15px;
+	border-radius: 10px;
+ }
+
+ .caption:hover {
+    cursor: pointer;
+    color: black;
+ }
+
+ .caption-active {
+    color: black;
+	background-color: #F2E34C;
+ }
+
+ #videoCarousel{
+     margin-top:5px;
+     width: 650px;
+     margin: auto;
+ }
+
+
+.teaser-img {
+    width: 300px !important;
+}
+
+.prompt{
+	 width: 612px;
+	font-size: 16px;
+}
+
+.video-container-meshes {
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    display: inline-block;
+}
+
+.video-container {
+    width: 37%; /* Adjust the width as needed */
+    float: left; /* This makes the containers sit side by side */
+    margin: 1%; /* Provides some space between the containers */
+
+	display: flex; 
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center;
+}
+
+.videos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust this as needed */
+    align-items: flex-start; /* To align items at the top */
+}
+
+.grid-video-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-bottom: 1px !important; */
+	margin-left: 10%; /* Increased left margin */
+    margin-right: 10%; /* Increased right margin */
+	padding: 0px 0; /* Small padding to prevent margin collapse */
+    box-sizing: border-box; /* Include padding in the box model */
+	margin-bottom: 0px;
+}
+
+
+.grid-video-container {
+    width: 18%; /* Adjust this percentage for width */
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.grid-video-container video {
+    width: 100%; /* Video fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media screen and (max-width: 800px) {
+    .grid-video-container {
+        width: 45%; /* Larger percentage for smaller screens */
+    }
+}
+
+.video-description {
+    text-align: center;
+    /* font-family: Chalkduster, serif; */
+	font-size: 14px; /* Example font size */
+    font-style: oblique; /* Oblique font style for descriptions */
+    margin-top: 3px;	
+	margin-bottom: 0px; /* Reduced or adjusted bottom margin */
+}

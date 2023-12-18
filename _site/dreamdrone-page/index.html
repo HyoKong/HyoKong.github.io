@@ -1,0 +1,515 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://6.869.csail.mit.edu/fa19/schedule.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLX2Z5QLG8"></script>-->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <!-- Disable FLoC -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DreamDrone</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Project page for &#39;DreamDrone.&#39;">
+    <link rel="icon" href="./pics/dreamdrone-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<body>
+    <!--       <p class="title">SceneScape: Text-Driven Consistent Scene Generation</p> -->
+    <div class="header">
+        <img src="./pics/dreamdrone-logo.png" alt="Logo" class="logo">
+        <p class="title">DreamDrone</p>
+    </div>
+
+    <p class="author">
+        <span class="author"><a target="_blank" href="https://hyokong.github.io/">Hanyang
+                Kong&nbsp;</a><sup>1</sup></span>
+        <span class="author"><a target="_blank" href="https://dongzelian.com/">Dongze Lian</a>&nbsp;<sup>1</sup></span>
+        <span class="author"><a target="_blank">Michael Bi Mi</a>&nbsp;<sup>2</sup></span>
+        <span class="author"><a target="_blank" href="https://sites.google.com/site/sitexinchaowang/">Xinchao
+                Wang</a>&nbsp;<sup>1</sup></span>
+    </p>
+    <!--      <h3 style="text-align: center">Anonymous Authors</h3>-->
+    <!-- <table border="0" align="center" class="affiliations" width="1200px">
+         <tbody align="center">
+            <tr>
+	        <td style="text-align: right; width: 17%"><img src="./pics/dreamdrone-logo.png" height="48" alt=""></td>
+                <td style="text-align: left; width:20%; ">&nbsp;<sup></sup>&nbsp;<a href="https://www.weizmann.ac.il/pages/"><sup>1</sup> Weizmann Institute of Science</a></td>
+
+            </tr>
+         </tbody>
+      </table> -->
+    <table border="0" align="center" class="affiliations" width="1200px">
+        <tbody align="center">
+            <tr>
+                <td style="text-align: right; width: 17%"></td>
+                <td style="text-align: left; width:38%; ">&nbsp;<sup>1</sup>&nbsp;<a href="http://lv-nus.org/"> Learning
+                        and Vision Lab, National University of Singapore</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="0" align="center" class="affiliations" width="1200px">
+        <tbody align="center">
+            <tr>
+                <td style="text-align: right; width: 17%"></td>
+                <td style="text-align: left; width:25%; ">&nbsp;<sup>2</sup>&nbsp;<a> Huawei International Pte. Ltd.</a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="0" align="center" class="menu" style="margin-bottom: 8px;">
+        <tbody>
+            <tr>
+                <td align="center"> <a href="https://arxiv.org/abs/2312.08746">Paper</a> |
+                    <a href="https://github.com/HyoKong/DreamDrone">Code</a> | <a
+                        href="https://huggingface.co/spaces/imsuperkong/dreamdrone">Huggingface Demo</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="grid-video-row">
+        <!-- Repeat the following structure for each video in the first row -->
+
+        <!-- <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/bustling-street-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a bustling street in an Art Deco style city at night.
+            </p> -->
+            <!-- an image of a bustling street in an Art Deco style city at night. The buildings are adorned with geometric patterns and gleaming metallic accents, illuminated by soft, yellow streetlights. Vintage cars and elegantly dressed pedestrians add to the 1920s glamour. -->
+        <!-- </div> -->
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/Doomsday-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a desolate street in a Doomsday ruins style.
+            </p>
+            <!-- an image of a desolate street in a Doomsday ruins style. The scene is set in a world after a catastrophic event, where buildings are crumbling and nature is reclaiming the urban landscape. The street is littered with abandoned vehicles, overgrown with vines and moss. Signs of former life, like a faded street sign or a broken billboard, are visible among the ruins. The sky is overcast, adding to the atmosphere of desolation and abandonment. This street tells a story of a once-bustling city now eerily silent and forsaken.        </div> -->
+        </div>
+            <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/lego-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                aerial view of city, lego style, high-resolution.
+            </p>
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/fairy-tale-forest-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a winding trail in a fairy tale forest.
+            </p>
+            <!-- a winding trail in a fairy tale forest. The path is lit by glowing mushrooms and fairy lights, leading to an enchanted castle or a hidden glade. Magical creatures peek from behind trees and flowers, and the whole scene is imbued with a sense of wonder and magic. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/wide-boulevard-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a wide boulevard in a retro-futuristic style.
+            </p>
+            <!-- an image of a wide boulevard in a retro-futuristic style, inspired by the 1950s vision of the future. The street is lined with sleek, chrome buildings and neon signs. Hover cars and monorails move above the ground, and pedestrians in stylish, futuristic attire walk along the sidewalk. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/Japanese-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a mountain village in the Japanese Ukiyo-e woodblock print style.
+            </p>
+            <!-- a mountain village in the Japanese Ukiyo-e woodblock print style. Include traditional thatched houses, cherry blossoms, and a distant Mount Fuji. A flowing river or a group of villagers walking along a path can serve as dynamic elements in the scene. -->
+        </div>
+    </div>
+
+    <div class="grid-video-row">
+        <!-- Repeat the following structure for each video in the first row -->
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/castle-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a corridor in a medieval castle.
+            </p>
+            <!-- a corridor in a medieval castle. The walls are made of rough stone, and the floor is laid with uneven flagstones. Torches in iron sconces line the walls, casting flickering shadows. Tapestries depicting ancient battles hang between the torches, and narrow windows let in sparse daylight. Armor and weapons are displayed along the corridor, hinting at the castle's storied past. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/Baroque-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a grand hallway in a Baroque-style palace.
+            </p>
+            <!-- a grand hallway in a Baroque-style palace. The corridor is extravagant, with gilded moldings, large mirrors, and crystal chandeliers. The floors are patterned with elaborate mosaics, and the walls are adorned with oil paintings in gilded frames. Lavish curtains frame the windows, adding to the opulent atmosphere. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/Steampunk-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a high building in a Steampunk world.
+            </p>
+            <!-- a high building in a Steampunk world. The tower is constructed of brass and iron with visible gears, pipes, and steam outlets. Clockwork mechanisms and airship docking stations add to the Steampunk aesthetic, with a backdrop of a smog-filled, industrial sky. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/hospital-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                a long, narrow corridor in an abandoned hospital from a horror game.
+            </p>
+            <!-- an image of a long, narrow corridor in an abandoned hospital from a horror game. The fluorescent lights flicker intermittently, casting unsettling shadows. The once-white walls are now peeling and stained, hinting at years of neglect. Rusty, abandoned wheelchairs and gurneys line the hallway, and distant, unexplained sounds echo through the air. Doors along the corridor are ajar, leading to dark, mysterious rooms. The atmosphere is thick with tension and fear, as if something unseen is lurking just out of sight. -->
+        </div>
+        <div class="grid-video-container">
+            <video controls autoplay loop muted playsinline>
+                <source src="joined_videos/Backyards-h264.mp4" type="video/mp4">
+            </video>
+            <p class="video-description" style="font-style: oblique;">
+                Backyards of Old Houses in Antwerp in the Snow, van Gogh.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <!-- <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner" style="width: fit-content; margin: auto">
+
+                <div class="carousel-item active">
+                    <video class="img-fluid" autoplay loop muted playsinline>
+                        <source src="joined_videos/lego-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique;">
+                        aerial view of city, lego style, high-resolution.
+                    </p>
+                </div>
+
+                <div class="carousel-item">
+                    <video class="img-fluid" autoplay loop muted playsinline>
+                        <source src="joined_videos/Gothic-style-city-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique;">
+                        a straight, narrow path through a Gothic-style city. The path is lined with tall, old buildings
+                        with pointed arches and gargoyles.
+                    </p>
+                </div>
+
+                <div class="carousel-item ">
+                    <video class="img-fluid" autoplay loop muted playsinline>
+                        <source src="joined_videos/cartoon-style-narrow-cave-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique;">
+                        a cartoon-style narrow cave. The cave is filled with chests of treasure, maps, and pirate
+                        paraphernalia. The cartoon style is exaggerated and playful, with bold lines and vibrant colors,
+                        perfect for a swashbuckling adventure.
+                    </p>
+                </div>
+
+               
+            </div>
+            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                <div class="slider-navigation-previous">
+                    <svg viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="white" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round"
+                            points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+                    </svg>
+                </div>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                <div class="slider-navigation-next">
+                    <svg viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="white" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round"
+                            points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                    </svg>
+                </div>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> -->
+        <br>
+        &nbsp;<div align="left"><i>TD;LR: zero-shot training-free text-to-perceptual scene generation. </i></div>
+        <br />
+        <p><span class="section"><b>Abstract</b></span> </p>
+        <p> We introduce <em>DreamDrone</em>, an innovative method for generating unbounded flythrough scenes from
+            textual prompts. Central to our method is a novel feature-correspondence-guidance diffusion process, which
+            utilizes the strong correspondence of intermediate features in the diffusion model. Leveraging this guidance
+            strategy, we further propose an advanced technique for editing the intermediate latent code, enabling the
+            generation of subsequent novel views with geometric consistency. Extensive experiments reveal that
+            <em>DreamDrone</em> significantly surpasses existing methods, delivering highly authentic scene generation
+            with exceptional visual quality. This approach marks a significant step in zero-shot perpetual view
+            generation from textual prompts, enabling the creation of diverse scenes, including natural landscapes like
+            oases and caves, as well as complex urban settings such as Lego-style street views. Code is available at
+            <a href="https://github.com/HyoKong/DreamDrone">https://github.com/HyoKong/DreamDrone</a>.
+        </p>
+        <hr>
+
+        <p class="section"><b>How It Works</b></p>
+        <div>
+            <p>Starting from a real or generated RGBD ($I$, $D$) image at the current view, we apply DDIM backward steps
+                to obtain intermediate latent code $x_{t_1}$ at timestep $t_1$ using a pre-trained U-Net model. A
+                low-pass wrapping strategy is applied to generate latent code for the next novel view. A few more DDPM
+                forward steps from timestep $t_1$ to $t_2$ are followed for enlarging the degree of freedom
+                <em>w.r.t.</em> the wrapped latent code. In the reverse progress, we apply pre-trained U-Net to recover
+                the novel view from $x_{t_2}'$. The cross-view self-attention module and feature-correspondence guidance
+                are applied to maintain consistency between $x_{t_2}$ and $x_{t_2}'$. The right side shows the wrapped
+                images and our generated novel view $I'$. Our method greatly alleviates blurring, in-consistency, and
+                distortion. The overall pipeline is zero-shot and training-free.
+            </p>
+        </div>
+        <div>
+            <img style="padding: 0; display: block; margin: 0 auto; max-height: 100%; max-width: 100%;"
+                src="pics/pipeline.png">
+        </div>
+
+        <!-- <hr> -->
+        <!-- <p> A visualization of the resulting meshes, produced by our method and post processed with Poisson surface
+            reconstruction. </p>
+
+        <table style="table-layout: fixed ;width: 100%">
+            <tbody>
+                <tr>
+                    <td> <br /> </td>
+                </tr>
+                <tr>
+                    <th style="font-family: Chalkduster,serif;">
+                        <div style="margin:auto; width:100%; text-align: center">POV, cave, pools, water, dark cavern,
+                            inside a cave, beautiful scenery, best quality, indoor scene</div>
+                    </th>
+                    <th style="font-family: Chalkduster,serif;">
+                        <div style="margin:auto; width:100%; text-align: center">indoor scene, interior, candy house,
+                            fantasy, beautiful, masterpiece, best quality</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <video controls autoplay loop muted
+                            style="padding: 2px; display: block; margin: 0 auto; height: auto; width: 100%">
+                            <source src="sm/assets/meshes/cave.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video controls autoplay loop muted
+                            style="padding: 2px; display: block; margin: 0 auto; height: auto; width: 100%">
+                            <source src="sm/assets/meshes/candy_house.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        <!-- <hr> -->
+        <!-- <p class="section"><b>Results</b></p>
+        <p style="margin-top: 0px;"> -->
+
+            <!-- </p> -->
+            <!-- <div align="center" style="margin-top: 3px">
+            <video controls autoplay loop muted playsinline width="1000"
+                style="padding: 0; display: block; margin: 0 auto; height: auto; width: 70%">
+                <source src="joined_videos/hotel.mp4" type="video/mp4">
+            </video>
+            <p class="prompt" style="font-family: Chalkduster,serif; width: 700px">
+                walkthrough, an opulent hotel with long, carpeted hallways, beautiful photo, masterpiece, indoor scene
+            </p>
+            <video controls autoplay loop muted playsinline width="1000"
+                style="padding: 0; display: block; margin: 0 auto; height: auto; width: 70%">
+                <source src="joined_videos/ice_castle.mp4" type="video/mp4">
+            </video>
+            <p class="prompt" style="font-family: Chalkduster,serif; width: 700px">
+                inside a castle made of ice, beautiful photo, masterpiece
+            </p>
+            <video controls autoplay loop muted playsinline width="1000"
+                style="padding: 0; display: block; margin: 0 auto; height: auto; width: 70%">
+                <source src="joined_videos/haunted_house.mp4" type="video/mp4">
+            </video>
+            <p class="prompt" style="font-family: Chalkduster,serif; width: 700px">
+                POV, haunted house, dark, wooden door, spider webs, skeletons, indoor scene
+            </p>
+        </div> -->
+
+        <!-- <div align="center" style="margin-top: 3px">
+            <div class="videos-row">
+                <div class="video-container">
+                    <video controls autoplay loop muted playsinline style="width: 66%;">
+                        <source src="joined_videos/tunnel-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique; width: 500px">
+                        a scene of an underground tunnel, perhaps part of a mine or an ancient subterranean city. Wooden
+                        supports line the walls, and the path is lit by lanterns or torches, casting long shadows and
+                        suggesting a journey into the depths.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <video controls autoplay loop muted playsinline style="width: 66%;">
+                        <source src="joined_videos/lego-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique; width: 500px">
+                        aerial view of city, lego style, high-resolution.
+                    </p>
+                </div>
+            </div>
+
+            Repeat the above pattern for each pair of videos
+        </div>
+        <div align="center" style="margin-top: 3px">
+            <div class="videos-row">
+                <div class="video-container">
+                    <video controls autoplay loop muted playsinline style="width: 66%;">
+                        <source src="joined_videos/house-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique; width: 500px">
+                        a peaceful narrow and straight suburban street lined with family homes, manicured lawns at each
+                        side
+                        of the street.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <video controls autoplay loop muted playsinline style="width: 66%;">
+                        <source src="joined_videos/white_house-h264.mp4" type="video/mp4">
+                    </video>
+                    <p class="prompt" style="font-style: oblique; width: 500px">
+                        an old cobblestone lane winding through the countryside. The lane passes by traditional stone
+                        cottages with thatched roofs and well-tended gardens, evoking a sense of nostalgia and timeless
+                        beauty.
+                    </p>
+                </div>
+
+            </div>
+
+
+            Repeat the above pattern for each pair of videos
+        </div> -->
+
+
+
+        <hr>
+        <!-- <div style="margin-top: 3px">
+            <p style="margin-top: 50px;">
+                Here we demonstrate the effect of the depth model finetuning. As can bee seen, without it, the MiDaS
+                predictions are inconsistent across time.
+            </p>
+            <video controls autoplay loop muted playsinline
+                style="padding: 0; display: block; margin: 0 auto; height: auto; width: 100%">
+                <source src="joined_videos/marble_staircase_depth_comparison.mp4" type="video/mp4">
+            </video>
+        </div> -->
+        <br>
+        <p class="section" id="paper"><b>Paper</b></p>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td height="100"><img src="./pics/paper_cover.png" alt="" width="140" height="167"></td>
+                    <td height="100">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td width="750">
+                        <p><b>DreamDrone</b>
+                            <!--                         <br>-->
+                            <!--                        Rafail Fridman, Amit Abecasis, Yoni Kasten, Tali Dekel.-->
+                            <!--                         <br />-->
+                            <br>
+                            <em>ArXiv</em><br><br>
+                            [<a href="https://arxiv.org/abs/2312.08746" target="_blank" rel="noopener noreferrer">paper</a>]
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <!-- <p class="section" id="sm"><b>Supplementary Material</b></p>
+        <table width="587" height="136" border="0">
+            <tbody>
+                <tr>
+                    <td width="180"><img src="./pics/sm_illustration.png" alt="" height="150" width="150"></td>
+                    <td align="left">
+                        <p>[<a href="./sm/index.html" target="_blank">supplementary page</a>]</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p> -->
+        <p class="section" id="bibtex"><b>Bibtex</b></p>
+        <table border="0">
+            <tbody>
+                <pre style=" display: block;
+                  background: #eee;
+                  white-space: pre;
+                  -webkit-overflow-scrolling: touch;
+                  max-width: 100%;
+                  min-width: 100px;
+                  border-radius: 20px;
+                  padding: 0;;">
+
+    @misc{kong2023dreamdrone,
+        title={DreamDrone}, 
+        author={Hanyang Kong and Dongze Lian and Michael Bi Mi and Xinchao Wang},
+        year={2023},
+        eprint={2312.08746},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+    }
+			  </pre>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <!--          <p>&nbsp;</p>-->
+        <p><b>Acknowledgments</b></p>
+        <p>The website design is borrowed from <a href="https://scenescape.github.io/">this website</a>. Thanks!
+        </p>
+    </div>
+</body>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WLX2Z5QLG8');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+            $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+        }
+
+        $(window).on("scroll", function () {
+            localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+        });
+
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
