@@ -1,99 +1,83 @@
 ---
 permalink: /
-title: "Hyo Kong"
-excerpt: "About me"
+title: ""
+excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am Hanyang Kong, a Ph.D student at National University of Singapore under the supervision of Prof. [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/).
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
+<span class='anchor' id='about-me'></span>
 
-Research Interests
-======
-Deep Learning; Machine Learning; Large-scale Face Recognition; Heterogeneous Face Recognition; Face Manipulation; Image Translation; Pose Estimation; AIGC; LLM.
+Hi there! 
 
-<!-- Working Experience
+Welcome to the website of Hanyang Kong (孔晗旸) 🌐
 
+I am honored to be pursuing my Ph.D. at the [Learning and Vision Lab @ NUS](http://www.lv-nus.org/), under the guidance of [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science previously led me to Xi'an Jiaotong University, where I completed my master's degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
 
-* * ***Aug. 2021 - Present*** : NUS Ph.D Student.
-  * Department of Electrical and Computer Engineering, National University of Singapore.
-  * Research Interest: Self Attention, Human Modeling.
-  * Supervisor: Prof. [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/). -->
+My research is centered on AIGC (Artificial Intelligence-Generated Content) and LLM (Large Language Models), focusing on:
+- 📊 **3D Generation and Estimation**: Striving to contribute to the evolution of digital modeling.
+- 💡 **Diffusion Models and LLM Applications**: Aiming to bridge advanced AI with real-world applications.
 
-News
-======
-* *Dec. 2023*: We release our new project [***DreamDrone***](https://hyokong.github.io/dreamdrone-page/). Code and online demo are also released. Please feel free to reach out!
-
-* *Jul. 2023*: Our paper, Priority-Centric Human Motion Generation in Discrete Latent Space, is accepted by ICCV 2023.
+Thank you for your interest. Please feel free to explore the site to learn more about my research and academic endeavors. 🔍
 
 
-Professional Activities
-======
-* Invited reviewer of T-CSVT, Neurocomputing, NeurIPS.
+# 🔥 News
+- *2023.12*: &nbsp;🎉🎉 🌟Our new work, DreamDrone, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
+- *2023.07*: &nbsp;🎉🎉 One paper 'Priority-centric human motion generation in discrete latent space' accepted by ICCV’23. 
 
-Selected Awards
-======
-* Outstanding Graduate student (<0.5%), Xi'an Jiaotong University, 2020.
-* Excellent Graduate Student (<1%), Xi'an Jiaotong University, 2019.
-* 1st-Class Scholarship (<10%), Xi'an Jiaotong University, 2019.
-* National 2nd Award, 15th China Post-Graduate Mathematical Contest in Modelling, 2018.
-* 1st-Class Scholarship (<10%), Xi'an Jiaotong University, 2018.
-* Excellent Graduate Student (<1%), Xi'an Jiaotong University, 2018.
-* Outstanding Graduate Student (<0.5%), Anhui Province, 2017.
-* Outstanding Graduate Student (<2%), Hefei University of Technology, 2017
+# 📝 Publications 
 
-Hobbies
-======
-<!-- Street Workout; Rowing; Breaking Dance; Swimming; Erhu (A traditional Chinese instrument) -->
-<!-- Erhu Instrument (Grade 10), Rowing (1st Prize in School Sports Meeting), Swimming (4th Prize in School Swimming Competition), Break Dance (6th in Anhui Division of National Street Dance Championship), Street Workout, MMA, Muay Thai, CrossFit. -->
-* Erhu Instrument (Grade 10)
-* Rowing (1st Prize in School Sports Meeting)
-* Swimming (4th Prize in School Swimming Competition)
-* Break Dance (6th in Anhui Division of National Street Dance Championship)
-* Street Workout
-* MMA
-* Muay Thai (Falling in love with it)
-* CrossFit
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/dreamdrone.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-<!-- A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+**Hanyang Kong**, Dongze Lian, Michael Bi Mi, Xinchao Wang
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-6. Check status by going to the repository settings, in the "GitHub pages" section
+[**Project page**](https://hyokong.github.io/dreamdrone-page/), [**Huggingface demo**](https://huggingface.co/spaces/imsuperkong/dreamdrone), [**Code**](https://github.com/HyoKong/DreamDrone.git), [**Arxiv**](https://arxiv.org/abs/2312.08746) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- **Zero-shot, Training-Free Scene Creation:** Generates perceptual scenes directly from text, without specific training for each scene.
+- **Click-Guided Dreamscapes Navigation:** Allows drone flight control through point selection, offering a visually immersive experience.
+- **Resource-Efficient Scene Generation:** Omits the need for a 3D point cloud, enabling faster scene creation with lower computational demand.
+</div>
+</div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='images/t2m.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+[Priority-Centric Human Motion Generation in Discrete Latent Space](https://arxiv.org/pdf/2308.14480.pdf)
 
-**Markdown generator**
+**Hanyang Kong**, Kehong Gong, Dongze Lian, Michael Bi Mi, Xinchao Wang
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+- Text-to-motion generation in descrete latent space. 
+- Priority-centric diffusion scheme for the discrete diffusion model.
+</div>
+</div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+<!-- # 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- - *2015-2019(B.Eng.)*:  -->
 
-For More Info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+# 📖 Educations
+- *2021.08 - present*: Ph.D. candidate in College of Design and Engineering, National University of Singapore.
+- *2017.08 - 2020.06*: M.Eng. in Faculty of Electronic and Information Engineering, Xi'an Jiaotong University. 
+- *2013.08 - 2017.06*: B.Eng. in Faculty of Electrical Engineering and Automation, Hefei University of Technology. 
+
+
+<!-- # 💬 Invited Talks
+- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
+
+<!-- # 💻 Internships
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
