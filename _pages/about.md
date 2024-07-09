@@ -31,15 +31,16 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 
 
 # 🔥 News
-- *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
+- *2024.07*: &nbsp;🎉🎉 Our paper *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators* was accepted by ECCV’24. 
+- *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
 - *2023.07*: &nbsp;🎉🎉 Our paper *Priority-centric human motion generation in discrete latent space* was accepted by ICCV’23. 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/dreamdrone.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='images/dreamdrone.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[***DreamDrone***](https://arxiv.org/abs/2312.08746.pdf) <img src='https://img.shields.io/github/stars/HyoKong/DreamDrone.svg?style=social&label=Star' alt="sym" height="100%">
+[***DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators***](https://arxiv.org/abs/2312.08746.pdf) <img src='https://img.shields.io/github/stars/HyoKong/DreamDrone.svg?style=social&label=Star' alt="sym" height="100%">
 
 **Hanyang Kong**, Dongze Lian, Michael Bi Mi, Xinchao Wang
 
