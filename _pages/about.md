@@ -32,7 +32,7 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 
 # 🔥 News
 - *2025.02*: &nbsp;🎉🎉 Our paper *Generative Sparse-View Gaussian Splatting* was accepted by CVPR’25. 
-- *2024.10*: &nbsp;🎉🎉 Our paper [*Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
+- *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
 - *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
 - *2023.07*: &nbsp;🎉🎉 Our paper [*Priority-centric human motion generation in discrete latent space*](https://arxiv.org/abs/2308.14480) was accepted by ICCV’23. 
