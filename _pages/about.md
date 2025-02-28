@@ -21,7 +21,7 @@ Hi there!
 
 Welcome to the website of Hanyang Kong (孔晗旸). 🌐  
 
-I am honored to be pursuing my Ph.D. at the [Learning and Vision Lab @ NUS](http://www.lv-nus.org/), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science previously led me to Xi'an Jiaotong University, where I completed my master's degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
+I am honored to be pursuing my Ph.D. at the [xML Lab @ NUS](https://sites.google.com/view/xml-nus), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science previously led me to Xi'an Jiaotong University, where I completed my master's degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
 
 My research is centered on AIGC (Artificial Intelligence-Generated Content) and LLM (Large Language Models), focusing on:
 - 📊 **3D Generation and Estimation**: Striving to contribute to the evolution of digital modeling.
