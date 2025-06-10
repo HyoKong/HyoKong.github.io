@@ -31,13 +31,45 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 
 
 # 🔥 News
-- *2025.02*: &nbsp;🎉🎉 Our paper *Generative Sparse-View Gaussian Splatting* was accepted by CVPR’25. 
+- *2025.02*: &nbsp;🎉🎉 Our paper [*Generative Sparse-View Gaussian Splatting*](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) was accepted by CVPR’25. 
 - *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
 - *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
 - *2023.07*: &nbsp;🎉🎉 Our paper [*Priority-centric human motion generation in discrete latent space*](https://arxiv.org/abs/2308.14480) was accepted by ICCV’23. 
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/gsgs-teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+[***Generative Sparse-View Gaussian Splatting***](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf)
+
+**Hanyang Kong**, Xingyi Yang, Xinchao Wang
+
+<!-- [**Project page**](https://hyokong.github.io/gsgs-page/), [**Paper**](ttps://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+- **Turn Sparse Views into Rich 3D:** Boosts 3D/4D Gaussian splatting with diffusion-based novel views.
+- **Geometry-Aware Consistency:** Enforces structural alignment via semantic correspondences.
+- **More with Less:** Matches dense data models using only a few input images.
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/edgs-pipe.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+[***Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling***](https://arxiv.org/abs/2502.20378)
+
+**Hanyang Kong**, Xingyi Yang, Xinchao Wang
+
+<!-- [**Project page**](https://hyokong.github.io/edgs-page/), [**Code**](https://github.com/HyoKong/DreamDrone.git), [**Arxiv**](https://arxiv.org/abs/2502.20378) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+- **Voxelized Time-Variant 3DGS:** Introduces deformable Gaussian splatting with unsupervised attribute filtering.
+- **Kernel-Based Motion Flow:** Formulates scene deformation using sparse, interpretable flow.
+- **Faster, Better Rendering:** Achieves faster rendering with superior visual quality.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='images/dreamdrone.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
