@@ -34,7 +34,7 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 - *2025.02*: &nbsp;🎉🎉 Our paper [*Generative Sparse-View Gaussian Splatting*](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) was accepted by CVPR’25. 
 - *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
-- *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)!
+<!-- - *2023.12*: &nbsp;🎉🎉 🌟Our new work, *DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*, is released! Check our [paper](https://arxiv.org/abs/2312.08746) and [code](https://github.com/HyoKong/DreamDrone.git)! Also, please feel free to try our online [huggingface demo](https://huggingface.co/spaces/imsuperkong/dreamdrone)! -->
 - *2023.07*: &nbsp;🎉🎉 Our paper [*Priority-centric human motion generation in discrete latent space*](https://arxiv.org/abs/2308.14480) was accepted by ICCV’23. 
 
 # 📝 Publications 
@@ -74,11 +74,12 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='images/dreamdrone.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[***DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators***](https://arxiv.org/abs/2312.08746.pdf) <img src='https://img.shields.io/github/stars/HyoKong/DreamDrone.svg?style=social&label=Star' alt="sym" height="100%">
+[***DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators***](https://arxiv.org/abs/2312.08746.pdf) 
+<!-- <img src='https://img.shields.io/github/stars/HyoKong/DreamDrone.svg?style=social&label=Star' alt="sym" height="100%"> -->
 
 **Hanyang Kong**, Dongze Lian, Michael Bi Mi, Xinchao Wang
 
-[**Project page**](https://hyokong.github.io/dreamdrone-page/), [**Huggingface demo**](https://huggingface.co/spaces/imsuperkong/dreamdrone), [**Code**](https://github.com/HyoKong/DreamDrone.git), [**Arxiv**](https://arxiv.org/abs/2312.08746) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+<!-- [**Project page**?](https://hyokong.github.io/dreamdrone-page/), [**Huggingface demo**](https://huggingface.co/spaces/imsuperkong/dreamdrone), [**Code**](https://github.com/HyoKong/DreamDrone.git), [**Arxiv**](https://arxiv.org/abs/2312.08746) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
 - **Zero-shot, Training-Free Scene Creation:** Generates perceptual scenes directly from text, without specific training for each scene.
 - **Click-Guided Dreamscapes Navigation:** Allows drone flight control through point selection, offering a visually immersive experience.
 - **Resource-Efficient Scene Generation:** Omits the need for a 3D point cloud, enabling faster scene creation with lower computational demand.
