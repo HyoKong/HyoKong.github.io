@@ -32,7 +32,7 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 I’m open to employment opportunities for a Research Scientist/Engineer position starting from 2026 in Singapore, Beijing, or Shanghai.
 
 # 🔥 News
-- *2025.02*: &nbsp;🎉🎉 Our paper *RogSplat: Robust Gaussian Splatting via Generative Priors* was accepted by ICCV’25. 
+- *2025.06*: &nbsp;🎉🎉 Our paper *RogSplat: Robust Gaussian Splatting via Generative Priors* was accepted by ICCV’25. 
 - *2025.02*: &nbsp;🎉🎉 Our paper [*Generative Sparse-View Gaussian Splatting*](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) was accepted by CVPR’25. 
 - *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
