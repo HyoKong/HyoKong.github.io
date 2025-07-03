@@ -29,8 +29,10 @@ My research is centered on AIGC (Artificial Intelligence-Generated Content) and 
 
 Thank you for your interest. Please feel free to explore the site to learn more about my research and academic endeavors. 🔍
 
+I’m open to employment opportunities for a Research Scientist/Engineer position starting from 2026 in Singapore, Beijing, or Shanghai.
 
 # 🔥 News
+- *2025.02*: &nbsp;🎉🎉 Our paper *RogSplat: Robust Gaussian Splatting via Generative Priors* was accepted by ICCV’25. 
 - *2025.02*: &nbsp;🎉🎉 Our paper [*Generative Sparse-View Gaussian Splatting*](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) was accepted by CVPR’25. 
 - *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
@@ -38,6 +40,21 @@ Thank you for your interest. Please feel free to explore the site to learn more 
 - *2023.07*: &nbsp;🎉🎉 Our paper [*Priority-centric human motion generation in discrete latent space*](https://arxiv.org/abs/2308.14480) was accepted by ICCV’23. 
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/rogsplat-teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+***RogSplat: Robust Gaussian Splatting via Generative Priors***
+
+**Hanyang Kong**, Xingyi Yang, Xinchao Wang
+
+<!-- [**Project page**](https://hyokong.github.io/gsgs-page/), [**Paper**](ttps://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+- **Make 3DGS Work in the Wild:** RogSplat fixes real-world issues like occlusion and motion blur.
+- **Smart Outlier Cleanup:** Detects and inpaints corrupted regions with a generative refiner.
+- **Reliable in Real Scenes:** Outperforms prior methods on complex real-world datasets.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/gsgs-teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
