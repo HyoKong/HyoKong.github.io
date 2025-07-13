@@ -17,19 +17,23 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there! 
+# Hi there!
 
-Welcome to the website of Hanyang Kong (孔晗旸). 🌐  
+Welcome to the website of **Hanyang Kong (孔晗旸)**. 🌐
 
-I am honored to be pursuing my Ph.D. at the [xML Lab @ NUS](https://sites.google.com/view/xml-nus), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science previously led me to Xi'an Jiaotong University, where I completed my master's degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
+I am honored to be pursuing my Ph.D. at the [xML Lab @ NUS](https://sites.google.com/view/xml-nus), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science began at **Xi’an Jiaotong University**, where I earned my master’s degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
 
-My research is centered on AIGC (Artificial Intelligence-Generated Content) and LLM (Large Language Models), focusing on:
-- 📊 **3D Generation and Estimation**: Striving to contribute to the evolution of digital modeling.
-- 💡 **Diffusion Models and LLM Applications**: Aiming to bridge advanced AI with real-world applications.
+My research is centered on **AIGC (Artificial Intelligence-Generated Content)** and **LLMs (Large Language Models)**, with a growing emphasis on **3D/4D Vision-Language-Action (VLA) models**—empowering agents to understand, reason, and act within complex real-world environments.
 
-Thank you for your interest. Please feel free to explore the site to learn more about my research and academic endeavors. 🔍
+**Key research interests include:**
+- 📊 **3D Generation and Estimation**: Advancing digital modeling for realistic scene understanding.  
+- 💡 **Diffusion Models and LLM Applications**: Exploring generative AI for both creative and practical purposes.  
+- 🌍 **3D/4D Vision-Language-Action (VLA) Models**: Developing embodied AI systems capable of perceiving, interpreting, and interacting with the physical world across space and time.
 
-I’m open to employment opportunities for a Research Scientist/Engineer position starting from 2026 in Singapore, Beijing, or Shanghai.
+Thank you for visiting!
+
+I’m open to employment opportunities for **Research Scientist/Engineer** roles starting in **2026**, preferably in **Singapore**, **Beijing**, or **Shanghai**.
+
 
 # 🔥 News
 - *2025.06*: &nbsp;🎉🎉 Our paper *RogSplat: Robust Gaussian Splatting via Generative Priors* was accepted by ICCV’25. 
