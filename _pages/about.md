@@ -23,16 +23,17 @@ Welcome to the website of **Hanyang Kong (孔晗旸)**. 🌐
 
 I am honored to be pursuing my Ph.D. at the [xML Lab @ NUS](https://sites.google.com/view/xml-nus), advised by [Prof. Xinchao Wang](https://sites.google.com/site/sitexinchaowang/) since August 2021. My academic journey in computer science began at **Xi’an Jiaotong University**, where I earned my master’s degree under the mentorship of [Prof. Qingyu Yang](https://gr.xjtu.edu.cn/web/yangqingyu/1). 🎓
 
-My research is centered on **AIGC (Artificial Intelligence-Generated Content)** and **LLMs (Large Language Models)**, with a growing emphasis on **3D/4D Vision-Language-Action (VLA) models**—empowering agents to understand, reason, and act within complex real-world environments.
+My research is centered on **AIGC (Artificial Intelligence-Generated Content)** and **LLMs (Large Language Models)**, with a growing emphasis on **3D/4D Vision-Language-Action (VLA) models**—empowering agents to understand, reason, and act in both static and dynamic real-world environments with spatial and temporal depth.
 
 **Key research interests include:**
 - 📊 **3D Generation and Estimation**: Advancing digital modeling for realistic scene understanding.  
 - 💡 **Diffusion Models and LLM Applications**: Exploring generative AI for both creative and practical purposes.  
-- 🌍 **3D/4D Vision-Language-Action (VLA) Models**: Developing embodied AI systems capable of perceiving, interpreting, and interacting with the physical world across space and time.
+- 🌍 **3D/4D Vision-Language-Action (VLA) Models**: Developing embodied AI systems capable of perceiving, interpreting, and interacting with complex physical real-world environments.
 
 Thank you for visiting!
 
 I’m open to employment opportunities for **Research Scientist/Engineer** roles starting in **2026**, preferably in **Singapore**, **Beijing**, or **Shanghai**.
+
 
 
 # 🔥 News
