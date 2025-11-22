@@ -37,7 +37,7 @@ I’m open to employment opportunities for **Research Scientist/Engineer** roles
 
 
 # 🔥 News
-- *2025.06*: &nbsp;🎉🎉 Our paper *RogSplat: Robust Gaussian Splatting via Generative Priors* was accepted by ICCV’25. 
+- *2025.06*: &nbsp;🎉🎉 Our paper [*RogSplat: Robust Gaussian Splatting via Generative Priors*](https://openaccess.thecvf.com/content/ICCV2025/papers/Kong_RogSplat_Robust_Gaussian_Splatting_via_Generative_Priors_ICCV_2025_paper.pdf) was accepted by ICCV’25. 
 - *2025.02*: &nbsp;🎉🎉 Our paper [*Generative Sparse-View Gaussian Splatting*](https://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) was accepted by CVPR’25. 
 - *2024.10*: &nbsp;🎉🎉 Our paper [*EDGS: Efficient Gaussian Splatting for Monocular Dynamic Scene Rendering via Sparse Time-Variant Attribute Modeling*](https://arxiv.org/abs/2502.20378) was accepted by AAAI’25. 
 - *2024.07*: &nbsp;🎉🎉 Our paper [*DreamDrone: Text-to-Image Diffusion Models are Zero-shot Perpetual View Generators*](https://arxiv.org/abs/2312.08746) was accepted by ECCV’24. 
@@ -46,11 +46,26 @@ I’m open to employment opportunities for **Research Scientist/Engineer** roles
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/worldwarp-teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+
+***WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion***
+
+**Hanyang Kong**, Xingyi Yang, Xiaoxu Zheng, Xinchao Wang
+
+<!-- [**Project page**](https://hyokong.github.io/gsgs-page/), [**Paper**](ttps://openaccess.thecvf.com/content/CVPR2025/papers/Kong_Generative_Sparse-View_Gaussian_Splatting_CVPR_2025_paper.pdf) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+- **Asynchronous Video Diffusion:** Adapts full-sequence video diffusion model into an asynchronous diffusion process for infinite, pose-guided scene generation from a single image.
+- **Warped Visual Hints:** Uses forward-warped 3DGS renderings as strong, explicit conditions to direct the synthesis of future frames.
+- **Online Geometric Cache:** Ensures cross-chunk consistency by dynamically optimizing the underlying 3D geometry.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/rogsplat-teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
-***RogSplat: Robust Gaussian Splatting via Generative Priors***
+[***RogSplat: Robust Gaussian Splatting via Generative Priors***](https://openaccess.thecvf.com/content/ICCV2025/papers/Kong_RogSplat_Robust_Gaussian_Splatting_via_Generative_Priors_ICCV_2025_paper.pdf)
 
 **Hanyang Kong**, Xingyi Yang, Xinchao Wang
 
