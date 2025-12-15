@@ -32,7 +32,7 @@ My research is centered on **AIGC (Artificial Intelligence-Generated Content)** 
 
 Thank you for visiting!
 
-I’m open to employment opportunities for **Research Scientist/Engineer** roles starting in **2026**, preferably in **Singapore**, **Beijing**, or **Shanghai**.
+I’m open to employment opportunities for **Research Scientist/Engineer** roles starting in **2026**, preferably in **USA** and **Singapore**.
 
 
 
