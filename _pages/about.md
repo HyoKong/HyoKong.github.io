@@ -50,7 +50,7 @@ I’m open to employment opportunities for **Research Scientist/Engineer** roles
 <div class='paper-box-text' markdown="1">
 
 
-***WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion***
+[***WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion***](https://hyokong.github.io/worldwarp-page/)
 
 **Hanyang Kong**, Xingyi Yang, Xiaoxu Zheng, Xinchao Wang
 

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorldWarp</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Playfair+Display:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="icon" type="image/png" href="static/images/ico.png">
+
+    <style>
+        /* --- RESET & BASIC SETUP --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s; }
+        a:hover { opacity: 0.8; }
+
+        /* --- HERO SECTION --- */
+        #intro {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #intro video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%; 
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            object-fit: cover; 
+            opacity: 0.6; 
+        }
+
+        .glass-box {
+            position: relative;
+            z-index: 2;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 3rem 3rem 4rem 3rem; 
+            max-width: 1100px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+            transform: translateY(-5vh); 
+        }
+
+        /* --- TITLE DESIGN (Yellow 3D) --- */
+        .main-title-yellow-3d {
+            font-family: 'Inter', sans-serif;
+            font-size: 6rem;
+            font-weight: 900;
+            font-style: italic; 
+            letter-spacing: -0.02em;
+            margin-top: 0;
+            margin-bottom: 30px; 
+            line-height: 1.0;
+            color: #ffcc00; 
+            transform: skewY(-2deg); 
+            text-shadow: 
+                1px 1px 0 #cc0000, 2px 2px 0 #cc0000, 3px 3px 0 #b30000,
+                4px 4px 0 #b30000, 5px 5px 0 #990000, 6px 6px 0 #990000,
+                10px 10px 20px rgba(0,0,0,0.8);
+            -webkit-text-stroke: 1px rgba(150, 0, 0, 0.5);
+        }
+
+        /* --- SUBTITLE DESIGN (Elegant) --- */
+        .sub-title-elegant {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 500; 
+            font-style: normal; 
+            letter-spacing: 0.02em;
+            color: #fff5d0; 
+            margin-bottom: 2.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+        }
+
+        .authors-list {
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .author-name { margin: 0 12px; display: inline-block; }
+        .author-name i { color: #e0e0e0; font-size: 0.8em; margin-left: 2px; vertical-align: middle; }
+        
+        .affiliations { 
+            font-size: 1rem; 
+            color: #aaaaaa; 
+            font-weight: 300;
+            margin-bottom: 2.5rem; 
+        }
+
+        /* --- BUTTONS --- */
+        .btn-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        
+        .btn {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 12px 28px; 
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+
+        .btn.dark-btn {
+            background-color: rgba(30, 30, 30, 0.6);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+        }
+        .btn.dark-btn:hover { background-color: #ffffff; color: black; border-color: #ffffff; }
+
+        .btn.hf-btn {
+            background: linear-gradient(90deg, #2d2d2d, #1a1a1a);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .btn.hf-btn:hover { background: linear-gradient(90deg, #3d3d3d, #2a2a2a); border-color: #ffffff; }
+
+        /* --- CONTENT SECTIONS --- */
+        section { max-width: 1200px; margin: 0 auto; padding: 100px 30px; }
+        .section-title { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 50px; font-family: 'Inter', sans-serif; color: #fff; }
+        .text-content { font-size: 1.15rem; line-height: 1.8; color: #cccccc; text-align: justify; max-width: 1000px; margin: 0 auto; font-weight: 300; }
+        .text-content strong { font-weight: 700; color: #ffffff; }
+
+        /* --- METHOD SECTION --- */
+        .method-container { display: flex; flex-direction: column; gap: 50px; align-items: center; width: 100%; }
+        .pipeline-img { width: 100%; max-width: 1000px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.3); }
+        
+        .method-video-wrapper { 
+            width: 100%; 
+            max-width: 1000px; 
+            aspect-ratio: 16 / 9; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            background: #000; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            border: 1px solid #222; 
+            margin: 0 auto; 
+            margin-bottom: 40px; 
+        }
+        .method-video-wrapper iframe { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block; 
+        }
+
+        /* --- RESULTS GRID --- */
+        .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; width: 100%; }
+        .video-card { position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 3/2; border: 1px solid #222; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .video-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .prompt-overlay { position: absolute; bottom: 15px; left: 15px; right: 15px; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(5px); padding: 12px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); color: #fff; font-size: 0.9rem; font-weight: 300; opacity: 0; transform: translateY(10px); transition: all 0.3s ease; pointer-events: none; }
+        .video-card:hover .prompt-overlay { opacity: 1; transform: translateY(0); }
+
+        /* --- BIBTEX --- */
+        .bibtex-section { background-color: #080808; padding: 80px 20px; margin-top: 50px; border-top: 1px solid #222; }
+        .bibtex-container { max-width: 900px; margin: 0 auto; background: #111; border-radius: 10px; overflow: hidden; border: 1px solid #222; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .bibtex-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; background: #181818; border-bottom: 1px solid #222; }
+        .bibtex-label { font-weight: 700; color: #fff; font-size: 1.2rem; }
+        .copy-btn { background: #2563eb; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
+        .copy-btn:hover { background: #1d4ed8; } .copy-btn.copied { background: #22c55e; }
+        .bibtex-code { padding: 25px; text-align: left; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.6; color: #ccc; overflow-x: auto; white-space: pre-wrap; }
+        .key { color: #61afef; } .string { color: #98c379; } .type { color: #e06c75; }
+
+        /* --- MOBILE RESPONSIVENESS --- */
+        @media (max-width: 768px) {
+            #intro { height: auto; min-height: 100vh; padding-top: 80px; padding-bottom: 40px; }
+            .glass-box { padding: 2rem; transform: translateY(0); margin-top: 20px; }
+            .main-title-yellow-3d { font-size: 3.5rem; }
+            .sub-title-elegant { font-size: 1.4rem; }
+            .results-grid { grid-template-columns: 1fr; }
+            section { padding: 60px 20px; }
+            .prompt-overlay { opacity: 1; transform: translateY(0); bottom: 10px; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="intro">
+        <video autoplay muted loop playsinline>
+            <source src="static/videos/web_teaser.mp4" type="video/mp4">
+        </video>
+
+        <div class="glass-box">
+            <h1 class="main-title-yellow-3d">WorldWarp</h1>
+            <h2 class="sub-title-elegant">Propagating 3D Geometry with Asynchronous Video Diffusion</h2>
+            
+            <div class="authors-list">
+                <span class="author-name">Hanyang Kong<sup>1</sup></span>
+                <span class="author-name">Xingyi Yang<sup>2</sup> <i class="fas fa-envelope"></i></span> </span> 
+                <span class="author-name">Xiaoxu Zheng<sup>1</sup></span>
+                <span class="author-name">Xinchao Wang<sup>1</sup> <i class="fas fa-envelope"></i></span>
+            </div>
+            
+            <div class="affiliations">
+                <sup>1</sup>National University of Singapore &nbsp;&nbsp; <sup>2</sup>The Hong Kong Polytechnic University
+            </div>
+            
+            <div class="btn-group">
+                <a href="https://arxiv.org/abs/2512.xxxxx" target="_blank" class="btn">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>Paper</span>
+                </a>
+                <a href="https://github.com/HyoKong/WorldWarp" target="_blank" class="btn dark-btn">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                </a>
+                <a href="https://huggingface.co/imsuperkong/worldwarp" target="_blank" class="btn hf-btn">
+                    <span class="icon">&#129303;</span> 
+                    <span>Hugging Face</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="abstract">
+        <div class="section-title">Abstract</div>
+        <div class="method-video-wrapper">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/rfMHxb--cKs?autoplay=1&mute=1&loop=1&playlist=rfMHxb--cKs&controls=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="text-content">
+            Generating long-range, geometrically consistent video presents a fundamental dilemma: while consistency demands strict adherence to 3D geometry in pixel space, state-of-the-art generative models operate most effectively in a camera-conditioned latent space. This disconnect causes current methods to struggle with occluded areas and complex camera trajectories. To bridge this gap, we propose WorldWarp, a framework that couples a 3D structural anchor with a 2D generative refiner. To establish geometric grounding, WorldWarp maintains an <strong>online 3D geometric cache</strong> built via Gaussian Splatting (3DGS). By explicitly warping historical content into novel views, this cache acts as a structural scaffold, ensuring each new frame respects prior geometry. However, static warping inevitably leaves holes and artifacts due to occlusions. We address this using a <strong>Spatio-Temporal Diffusion (ST-Diff) model</strong> designed for a "fill-and-revise" objective. Our key innovation is a <strong>spatially-varying noise schedule</strong>: blank regions receive full noise to trigger generation, while warped regions receive partial noise to enable refinement. By dynamically updating the 3D cache at every step, WorldWarp maintains consistency across video chunks. Consequently, it achieves state-of-the-art fidelity by ensuring that 3D logic guides structure while diffusion logic perfects texture.
+        </div>
+    </section>
+
+    <section id="method">
+        <div class="section-title">Method</div>
+        <div class="method-container">
+            
+            <img src="static/images/inference.jpg" alt="WorldWarp Inference Pipeline" class="pipeline-img">
+            <div class="text-content">
+                <strong>Autoregressive Inference Pipeline:</strong> WorldWarp generates video chunk-by-chunk using an autoregressive loop. At each iteration, we process the available history to estimate camera poses and initialize a 3D point cloud. This geometry is used to optimize a 3D Gaussian Splatting (3DGS) representation, which serves as a high-fidelity 3D cache. We then render forward-warped images ("priors") for the upcoming chunk. These geometric priors, along with a descriptive text prompt, are fed into our ST-Diff model. The model refines these hints, filling in occlusions and correcting distortions to produce the final video chunk, which then becomes the history for the next iteration.
+            </div>
+
+            <img src="static/images/training.jpg" alt="WorldWarp Training Pipeline" class="pipeline-img">
+            <div class="text-content">
+                <strong>Training with Spatially-Varying Noise:</strong> To train the model for the "fill-and-revise" task, we prepare a composite latent sequence by mixing warped priors (valid regions) with ground-truth features (occluded regions). A spatially-varying noise schedule is applied, where valid regions receive partial noise and blank regions receive pure noise. The resulting noisy latents are fed into our model \( G_\theta \), which is trained to predict the target velocity (defined as \( \mathbf{\epsilon}_t - \mathbf{z}_t \)), forcing it to learn the flow from the noisy composite latent back towards the original ground-truth latent sequence \( \mathcal{Z} \).
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="section-title">Generated Scenes</div>
+        <div class="text-content" style="text-align: center; margin-bottom: 40px;">
+            Results generated from single images or text prompts. Hover over videos to see prompts.
+        </div>
+
+        <div class="results-grid">
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/24.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Cinematic anime-style empty classroom at golden hour. Warm sunlight streaming through windows, dust particles floating in light beams. Shadows lengthening on wooden desks. 4k, nostalgic atmosphere.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/25.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A vibrant, sunlit greenhouse teems with a lush array of colorful flowers and verdant foliage. The glass roof allows ample sunlight to filter through, casting a warm glow throughout the space. The environment suggests a meticulously maintained botanical garden, with rows of blooming flowers and dense greenery filling the room.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/7.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Lush green Sago Palm cycad housed in a long, modern white concrete planter within a brightly lit atrium. The feathery fronds sway gently in a subtle airflow. Tiled flooring reflects the overhead lights and daylight. Peaceful, photorealistic atmosphere. 4k.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/12.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Stop-motion animation of a whimsical clay forest floor. The camera slowly pans across vibrant green clay grass, red mushrooms with white spots, and a wavy blue clay river. The blue river ripples gently, and the grass blades and mushrooms subtly wiggle. Soft, playful lighting highlights the textured clay.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/5.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Modern minimalist living room facing an ocean sunset. Gentle waves rolling on the horizon, warm orange light reflecting on the polished floor. Photorealistic 4k.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/22.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Cozy fantasy library, curved wooden shelves filled with books. Candles flickering on the central table, warm light glowing. Slow dolly forward. 4k.
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/1.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Aerial drone shot of Marina Bay Sands and ArtScience Museum at blue hour. Warm city lights glowing against the twilight sky, vibrant reflections shimmering on the water. Ships moving slowly in the distant strait, clouds drifting. 8k, majestic skyline.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/2.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Cinematic night street in Tokyo, neon signs glowing and flickering. Rain falling heavily on wet asphalt, colorful reflections shimmering on the ground. Pedestrians walking in the distance. Slow camera dolly forward. 4k, cyberpunk atmosphere.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/10.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A white bicycle leaning against a black metal park bench. Green trees in the background swaying slightly in a gentle breeze. Soft overcast lighting, depth of field. Photorealistic.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/0.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A round wooden garden table with a dried palm leaf in a coconut vase. Lush green bushes and ivy in the background rustling gently in the wind. Soft natural daylight, peaceful backyard atmosphere. 4k.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/18.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A massive Triceratops fossil skull in a modern museum. Soft gallery lighting reflecting on the bone texture. 4k, realistic documentary style.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/19.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A large Sago Palm in a modern white planter inside a bright atrium. Green fronds swaying gently, tiled floor reflecting overhead lights. 4k, architectural style.
+                </div>
+            </div>
+        </div>
+        <div class="section-title" style="margin-bottom: 40px; margin-top: 60px;">Longer video? Let's try!</div>
+
+        <div class="results-grid">
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/0_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A vibrant, sunlit greenhouse teems with a lush array of colorful flowers and verdant foliage. The glass roof allows ample sunlight to filter through, casting a warm glow throughout the space. The environment suggests a meticulously maintained botanical garden, with rows of blooming flowers and dense greenery filling the room.
+
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/1_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Cinematic anime-style empty classroom at golden hour. Warm sunlight streaming through windows, dust particles floating in light beams. Shadows lengthening on wooden desks. 4k, nostalgic atmosphere.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/2_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A round wooden garden table with a dried palm leaf in a coconut vase. Lush green bushes and ivy in the background rustling gently in the wind. Soft natural daylight, peaceful backyard atmosphere. 4k.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/3_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A white bicycle leaning against a black metal park bench. Green trees in the background swaying slightly in a gentle breeze. Soft overcast lighting, depth of field. Photorealistic.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/4_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    Modern minimalist living room facing an ocean sunset. Gentle waves rolling on the horizon, warm orange light reflecting on the polished floor. Photorealistic 4k.
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/5_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A large Sago Palm in a modern white planter inside a bright atrium. Green fronds swaying gently, tiled floor reflecting overhead lights. 4k, architectural style.
+                </div>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/6_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A photorealistic scene of a historic cannon situated in front of a dilapidated stone fortress under a bright blue sky dotted with fluffy white clouds. The cannon, mounted on a wooden carriage, rests amidst a rugged landscape of grassy terrain and scattered rocks.
+
+                </div>
+            </div>
+
+             <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="static/samples/7_long.mp4" type="video/mp4">
+                </video>
+                <div class="prompt-overlay">
+                    A vibrant, stylized rural landscape unfolds under a clear blue sky dotted with fluffy clouds. Rows of lush green vines stretch towards the horizon, bordered by a simple metal fence. Beyond the vineyard, rolling hills covered in verdant fields extend into the distance, punctuated by clusters of trees and small white buildings nestled among the greenery.
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="bibtex-section">
+        <div class="bibtex-container">
+            <div class="bibtex-header">
+                <span class="bibtex-label">BibTeX</span>
+                <button class="copy-btn" onclick="copyBibTeX()">
+                    Copy BibTeX
+                </button>
+            </div>
+            <div class="bibtex-code" id="bibtex-text"><span class="type">@misc</span>{<span class="key">kong2025worldwarp</span>,
+  title={<span class="string">WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion</span>}, 
+  author={<span class="string">Hanyang Kong and Xingyi Yang and Xiaoxu Zheng and Xinchao Wang</span>},
+  year={<span class="string">2025</span>},
+  eprint={<span class="string">2512.xxxxx</span>},
+  archivePrefix={<span class="string">arXiv</span>},
+  primaryClass={<span class="string">cs.CV</span>}
+}</div>
+        </div>
+    </section>
+
+    <script>
+        function copyBibTeX() {
+            const bibtexDiv = document.getElementById("bibtex-text");
+            const textToCopy = bibtexDiv.innerText;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                
+                btn.innerHTML = 'Copied!';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.innerHTML = 'Copy BibTeX';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+
+</body>
+</html>
