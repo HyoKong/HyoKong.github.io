@@ -5,3 +5,6 @@
 [submodule "worldwarp-page"]
 	path = worldwarp-page
 	url = https://github.com/HyoKong/worldwarp-page.git
+[submodule "segment-snap-page"]
+	path = segment-snap-page
+	url = https://github.com/HyoKong/segment-snap-page.git
